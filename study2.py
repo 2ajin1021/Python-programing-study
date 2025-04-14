@@ -33,7 +33,7 @@
 
 #1
 for i in range (1,11):
-    print(i)
+    print("%d"%i, end='')
 
 #2
 a = int(input("정수를 입력하세요:"))
@@ -93,17 +93,44 @@ for i in range(1,a+1):
     print('*'*i)
 
 #12
-for i in range(q,10):
-    print('%d*')
-
+for i in range(1, 6):
+    print("2 * %d = %d" % (i, 2 * i), end=' ')
+    if i + 5 != 10:
+        print("2 * %d = %d" % (i + 5, 2 * (i + 5)))
+    else:
+        print()
 
 #13
+s = input()
+if s == s[::-1]:
+    print("YES")
+else:
+    print("NO")
+
+#2번째 풀이 방법
+s = input("")
+length = len(s)
+flag = False
+for i in range(length // 2):
+    if s[i] != s[length - i - 1]:
+        break
+else:
+    flag = True
+
+if flag:
+    print("YES")
+else:
+    print("NO")
 
 #14
-a=int(input("정수를 입력하세요:"))
-for i in range(1,a+1):
-    print('*'*i)
+n = int(input())
+for i in range(n):
+    print("%s%s" % (' ' * (n - i - 1), '*' * (2 * i + 1)))
 
 #15
 a = int(input("정수를 입력하세요:"))
-for i in range()
+for i in range(a):
+    print(" " * i + "*" * (2 * (n - i) - 1))
+
+for i in range(1, n):
+    print(" " * (n - i - 1) + "*" * (2 * i + 1))
