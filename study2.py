@@ -1,13 +1,15 @@
 # warm up 백준10869번
 
-# a = int(input( "숫자를 입력하세요:"))
-# b = int(input( "숫자를 입력하세요:"))
-
-# print(a+b)
-# print(a-b)
-# print(a*b)
-# print(a//b)
-# print(a%b)
+num = input().split()
+a = int(num[0])
+b = int(num[1])
+#int어디다 뭍이는건지 잘 확인해보기
+#map사용 안하고 풀어보는 방법임 -> 처음에 int(input())으로 했을 때는 입력 값도 줄바뀜이 다르고 num이거에서 int안붙이니까 str으로 인식돼서 -부터 계산이 안됨
+print(a+b)
+print(a-b)
+print(a*b)
+print(a//b)
+print(a%b)
 
 # a = int(input("1<=a<=100000인 자연수:"))
 # b = int(input("1<=a<=100000인 자연수:"))
