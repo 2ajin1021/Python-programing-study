@@ -1,0 +1,4 @@
+ok
+error: file not found
+success
+error: invalid input
